@@ -1,6 +1,6 @@
 import './App.css'
 import { useEffect, useState } from 'react'
-import Cards from './components/Card'
+import Card from './components/Card'
 import CardGrid from './components/CardGrid'
 import Header from './components/Header'
 import Score from './components/Score'
