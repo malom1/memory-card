@@ -5,8 +5,8 @@ const fetchCats = async () => {
             throw new Error(`Error: ${response.status}`);
         }
 
-        const json = response.json(); 
-        return json.map((cat) => ({id: cat.id}))
+        const json = await response.json(); 
+        return json.map((cat) =>({id: cat.id}));
     } catch (error) {
         console.error("Error fetching data:", error)
         return [];
