@@ -24,7 +24,7 @@ function App() {
       setClickedCats([]);
     } else {
       setScore(score + 1);
-      setClickedCats(...clickedCats, id);
+      setClickedCats([...clickedCats, id]);
 
       console.log(clickedCats);
       console.log('score: ', score)
