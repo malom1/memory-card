@@ -1,6 +1,5 @@
 import './App.css'
 import { useEffect, useState } from 'react'
-import Card from './components/Card/Card'
 import CardGrid from './components/CardGrid/CardGrid'
 import Header from './components/Header/Header'
 import Score from './components/Score/Score'
@@ -25,9 +24,6 @@ function App() {
     } else {
       setScore(score + 1);
       setClickedCats([...clickedCats, id]);
-
-      console.log(clickedCats);
-      console.log('score: ', score)
 
       if (score + 1 > highScore) {
         setHighScore(score + 1);

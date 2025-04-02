@@ -1,5 +1,4 @@
 import Card from "../Card/Card";
-import './CardGrid.css'
 
 export default function CardGrid({cats, onCardClick}) {
     return(
